@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+<body>
+
+    Movie Update Page
+
+    <form>
+        {% csrf_token %}
+
+        <p>
+            <label for="name">Username:</label>
+            <input type="text" id="username" name="username" required minlength="4" maxlength="8" size="10" value="user1" />
+
+            <label for="name">Password:</label>
+            <input type="password" id="password" name="password" required minlength="4" maxlength="8" size="10" value="Dune 2" />
+
+            <a href="{% url 'user-home' %}">Login</a>
+
+        </p>
+    </form>
+
+</body>
+
+</html>

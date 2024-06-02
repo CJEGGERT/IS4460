@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+<body>
+
+    Movie Update Page
+
+    <form method="post">
+        {% csrf_token %}
+
+        <p>
+            <label for="name">Movie Name (4 to 8 characters):</label>
+            <input type="text" id="movie_name" name="movie_name" required minlength="4" maxlength="8" size="10" value="Dune 2" />
+
+            <label for="name">Release Year (4 digits):</label>
+            <input type="text" id="release_year" name="release_year" required minlength="4" maxlength="8" size="10" value="2024" />
+            <input type="submit" value="Update">
+        </p>
+    </form>
+
+</body>
+
+</html>

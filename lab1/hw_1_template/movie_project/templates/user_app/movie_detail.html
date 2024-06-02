@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'user_app/styles.css' %}">
+</head>
+
+<body>
+
+    <h1>
+        Movie Detail Page
+    </h1>
+    <img src="{% static 'user_app/heart.svg' %}" alt="My image">
+
+    <p>
+        <a href="{% url 'movie-list' %}">Back to Movie List</a>
+    </p>
+
+</body>
+
+</html>
