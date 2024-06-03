@@ -13,7 +13,7 @@
             ],
             "django": true,
             "autoStartBrowser": false,
-            "program": "${workspaceFolder}\\uta_track\\manage.py"
+            "program": "${workspaceFolder}/uta_track/manage.py"
         }
     ]
 }
