@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+
+<head>
+    <title>Faq Page</title>
+    <link rel="stylesheet" href="{% static 'uta_user/styles.css' %}">
+</head>
+
+<body>
+
+    <a href="{% url 'home' %}">Home Page</a>
+ 
+
+    <h1>Here is some information about our site. Thanks for visiting!</h1>
+    <!-- This text won't display on the page. It's a comment. Matt Pecsok 5/1/1995 -->
+    <a href="https://www.eccles.utah.edu/">DESB Home</a>
+
+   
+
+
+    <p title="I'm a tooltip">This is information about our site. It's contained in a paragraph. Thanks.</p>
+
+    <div>
+        This is a div. no class or id.
+        <img src="{% static 'uta_user/heart.svg' %}" alt="My image">
+    </div>
+
+    <div class="custom-class-style">
+        custom-class-style (class selector)
+    </div>
+
+    <div class="custom-class-style">
+        custom-class-style (class selector)
+    </div>
+
+    <div id="custom-id-style">
+        custom-id-style (id selector)
+    </div>
+
+    <ul>
+        <li>Oranges</li>
+        <li>Pears</li>
+        <li>Apples</li>
+    </ul>
+
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{% extends 'uta_user/base.html' %}
+
+{% block content %}
+
+<a class="nav-link" href="{% url 'user_create_edit' %}">Edit Routes</a>
+
+{% for route in my_routes %}
+
+<ul>
+    <li>
+        {{ route.route_name }}
+    </li>
+</ul>
+
+{% endfor %}
+
+{% endblock %}
