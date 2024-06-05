@@ -1,8 +1,6 @@
-html {
-    background-color: #CA3C25
-}
 
 body {
+    background-color: #4A4A48;
     text-align: center;
 }
 
@@ -26,7 +24,12 @@ li {
     display: inline-block;
     margin:30px;
 }
-div {
-    background-color: #E6AA68;
+
+.one {
+    background-color: #CA3C25;
+}
+
+h2 {
+    background-color: #CA3C25;
 }
 
