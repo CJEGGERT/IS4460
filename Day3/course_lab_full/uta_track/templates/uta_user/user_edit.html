@@ -1,0 +1,15 @@
+{% extends 'uta_user/base.html' %}
+
+{% block content %}
+    User Edit:<br>
+    <form method="post">
+
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <input type="submit" value="Update">
+    </form>
+
+{% endblock %}
+
+</html>

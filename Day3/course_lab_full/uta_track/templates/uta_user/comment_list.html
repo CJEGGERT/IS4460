@@ -1,0 +1,14 @@
+{% extends 'uta_user/base.html' %}
+
+{% block content %}
+
+<ol>
+    {% for comment in comments %}
+    <li>
+        {{comment}}
+    </li>
+    {% endfor %}
+</ol>
+
+{% endblock %}
+

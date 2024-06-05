@@ -1,0 +1,37 @@
+
+{% extends 'uta_user/base.html' %}
+
+{% block content %}
+
+  {{ locations|json_script:"locations-data" }}
+
+  <div id="map" ></div>
+  <script>
+      var map = L.map('map').setView([40.7608,-111.8910], 10); // Set the initial position and zoom level of the map
+
+      const points = JSON.parse(document.getElementById('locations-data').textContent);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '© OpenStreetMap'
+      }).addTo(map);
+
+      map.on('click', function(e) {
+    alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)
+});
+
+      // Example points (use points passed from Django here)
+      //var points = [
+       //   {"lat": 51.505, "lon": -0.09, "name": "Marker 1"},
+      //    {"lat": 51.515, "lon": -0.10, "name": "Marker 2"}
+      //];
+
+      // Add markers to the map
+      points.forEach(function(point) {
+          L.marker([point.lat, point.lon]).addTo(map)
+              .bindPopup(point.name)
+              .openPopup();
+      });
+  </script>
+
+{% endblock %}
