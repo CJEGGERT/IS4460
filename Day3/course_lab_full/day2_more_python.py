@@ -100,3 +100,6 @@ plane = plane(make='Gulfstream',model='g700',doors=2)
 print(f'Car has Wheels: {car.wheels}')
 print(f'Plane has Wings: {plane.wings}')
 
+
+
+
