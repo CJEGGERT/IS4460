@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
+    {% load static %}
     <head>
+        <link rel="stylesheet" href="{% static 'user_app/styles.css' %}">
     </head>
 <body>
-
+    <h1>Home</h1>
+ <p>
 Welcome home! Click below to go to see movies or actors. 
-
+<br>
+<br>
 <a href="{% url 'movie-list' %}">List Movies</a>
-
+<br>
 <a href="#">List Actors</a>
+<br>
+<br>
+</p>
+
 
 </body>
 

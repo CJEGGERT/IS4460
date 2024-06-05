@@ -1,6 +1,13 @@
+html {
+    background-color: #CA3C25
+}
+
+body {
+    text-align: center;
+}
 
 h1 {
-    background-color: rgb(0,238,255);
+    background-color: #E6AA68;
 }
 
 .custom-class-style {
@@ -10,3 +17,16 @@ h1 {
 #custom-id-style {
     background-color: red;
 }
+
+p {
+    background-color: #E6AA68;
+}
+
+li {
+    display: inline-block;
+    margin:30px;
+}
+div {
+    background-color: #E6AA68;
+}
+

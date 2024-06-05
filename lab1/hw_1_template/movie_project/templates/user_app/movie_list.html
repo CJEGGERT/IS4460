@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html>
+    {% load static %}
     <head>
+        <title>Movie List</title>
+        <link rel="stylesheet" href="{% static 'user_app/styles.css' %}">
     </head>
 <body>
+<div>
+<h1>Movie List</h1>
+<ul>
 
-Movie List Page
+<li><a href="{% url 'user-home' %}">Home</a></li>
 
-<a href="{% url 'user-home' %}">Home</a>
+<li><a href="{% url 'movie-add' %}">Add Movie</a></li>
 
-<a href="{% url 'movie-add' %}">Add Movie</a>
+<li><a href="{% url 'movie-detail' %}">Movie Details</a></li>
 
-<a href="{% url 'movie-detail' %}">Movie Details</a>
+<li><a href="{% url 'movie-update' %}">Movie Update</a></li>
 
-<a href="{% url 'movie-update' %}">Movie Update</a>
+<li><a href="{% url 'movie-delete' %}">Movie Delete</a></li>
+</ul>
+</div>
+<br>
+<br>
+<div>
+    <br>
+    <h2>Inception</h2>
+    <img src="{% static 'user_app/Inception.jpg' %}" alt="Inception">
+</div>
+<br>
+<br>
+<br>
+<div>
+    <br>
+    <h2>Monkeyman</h2>
+    <img src="{% static 'user_app/Monkeyman.jpg' %}" alt="Inception">
+</div>
+<br>
+<br>
+<br>
+<div>
 
-<a href="{% url 'movie-delete' %}">Movie Delete</a>
-
+</div>
+<br>
+<div>
+    Movie
+</div>
+<br>
+<div>
+    Movie
+</div>
 </body>
 
 </html>

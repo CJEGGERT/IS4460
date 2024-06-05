@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
-
+    {% load static %}
 <head>
+    <link rel="stylesheet" href="{% static 'user_app/styles.css' %}">
 </head>
 
 <body>
 
-    Movie Add Page
+    <h1>Movie Add Page</h1>
 
     <form method="post">
         {% csrf_token %}
