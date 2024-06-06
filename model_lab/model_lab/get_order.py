@@ -2,10 +2,9 @@ import os
 import django
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'model_lab.settings')
 django.setup()
-from customer.models import Customer
+from customer.models import Customer,Order
 
-customer1 = Customer()
 
-customer1.name = "Best_Org_Ever"
+order = Order.objects.get(id=1)
 
-customer1.save()
+print(order.customer.name)

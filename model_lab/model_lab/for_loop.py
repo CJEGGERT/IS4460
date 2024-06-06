@@ -4,8 +4,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'model_lab.settings')
 django.setup()
 from customer.models import Customer
 
-customer1 = Customer()
+all_customers= Customer.objects.all()
 
-customer1.name = "Best_Org_Ever"
-
-customer1.save()
+for c in all_customers:
+    print(c.name)

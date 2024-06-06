@@ -4,8 +4,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'model_lab.settings')
 django.setup()
 from customer.models import Customer
 
-customer1 = Customer()
+a_customer = Customer.objects.get(id=3)
+a_customer.name = "Matts AI Company"
+a_customer.save()
 
-customer1.name = "Best_Org_Ever"
-
-customer1.save()
