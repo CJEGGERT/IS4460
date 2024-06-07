@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    {% load static %}
+    <head>
+        <Title>Login Page</Title>
+        <link rel="stylesheet" href="{% static 'user_app/styles.css' %}">
+    </head>
+<body>
+    
+    <h1>Movie Update Page</h1>
+
+    <form>
+        {% csrf_token %}
+
+        <p>
+            <br>
+            Welcome to the Movie Update Page! Please login to get started
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <label for="name">Username:</label>
+            <input type="text" id="username" name="username" required minlength="4" maxlength="8" size="10" value="user1" />
+
+            <label for="name">Password:</label>
+            <input type="password" id="password" name="password" required minlength="4" maxlength="8" size="10" value="Dune 2" />
+
+            <a href="{% url 'user-home' %}">Login</a>
+            <br>
+            <br>
+            <br>
+            <br>
+        </p>
+            <img src="{% static 'user_app/456_Movies.png' %}" alt="456_Movies" style="max-width: 1690px;">
+            <div class="one">
+            <br>
+            <br>
+            <br>
+            </div>
+            
+            
+            
+       
+
+   
+           
+        
+
+    </form>
+    
+</body>
+
+</html>

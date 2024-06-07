@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+    <head>
+        <link rel="stylesheet" href="{% static 'user_app/styles.css' %}">
+    </head>
+<body>
+
+   <h1>Movie Update Page</h1>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <p>
+            <label for="name">Movie Name (4 to 8 characters):</label>
+            <input type="text" id="movie_name" name="movie_name" required minlength="4" maxlength="8" size="10" value="Dune 2" />
+
+            <label for="name">Release Year (4 digits):</label>
+            <input type="text" id="release_year" name="release_year" required minlength="4" maxlength="8" size="10" value="2024" />
+            <input type="submit" value="Update">
+        </p>
+    </form>
+
+
+
+    <div class="one">
+        <br>
+        <br>
+        <br>
+        </div>
+
+
+    <p>
+      
+        <a href="{% url 'movie-list' %}">Cancel</a>
+    </p>
+
+   
+</body>
+
+</html>

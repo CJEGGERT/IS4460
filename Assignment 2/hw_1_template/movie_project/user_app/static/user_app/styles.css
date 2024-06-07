@@ -1,0 +1,35 @@
+
+body {
+    background-color: #4A4A48;
+    text-align: center;
+}
+
+h1 {
+    background-color: #E6AA68;
+}
+
+.custom-class-style {
+    background-color: rgb(255,0,255);
+}
+
+#custom-id-style {
+    background-color: red;
+}
+
+p {
+    background-color: #E6AA68;
+}
+
+li {
+    display: inline-block;
+    margin:30px;
+}
+
+.one {
+    background-color: #CA3C25;
+}
+
+h2 {
+    background-color: #CA3C25;
+}
+

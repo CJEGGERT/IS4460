@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+    <head>
+        <title>Movie List</title>
+        <link rel="stylesheet" href="{% static 'user_app/styles.css' %}">
+    </head>
+<body>
+<div>
+<h1>Movie List</h1>
+</div>
+
+<div class="one">
+<ul>
+
+<li><a href="{% url 'user-home' %}">Home</a></li>
+
+<li><a href="{% url 'movie-add' %}">Add Movie</a></li>
+
+<li><a href="{% url 'movie-detail' %}">Movie Details</a></li>
+
+<li><a href="{% url 'movie-update' %}">Movie Update</a></li>
+
+<li><a href="{% url 'movie-delete' %}">Movie Delete</a></li>
+</ul>
+</div>
+
+<div>
+    <br>
+    <h2>Inception</h2>
+    <img src="{% static 'user_app/Inception.jpg' %}" alt="Inception" style="max-width: 900px">
+</div>
+<br>
+<br>
+<br>
+<div>
+    <br>
+    <h2> Monkeyman</h2>
+    <img src="{% static 'user_app/Monkeyman.jpg' %}" alt="Monkeyman" style="max-width: 900px">
+</div>
+<br>
+<br>
+<br>
+<div>
+    <br>
+    <h2>Everything Everywhere All At Once</h2>
+    <img src="{% static 'user_app/eeaao.jpg' %}" alt="eeaao" style="max-width: 900px">
+</div>
+<br>
+<div>
+    <h2>Avatar</h2>
+    <img src="{% static 'user_app/avatar.webp' %}" alt="Avatar" style="max-width: 900px">
+</div>
+<br>
+<div>
+    <h2>The Big Lebowski</h2>
+    <img src="{% static 'user_app/big_lewbowski.jpg' %}" alt="Lebowski" style="max-width: 900px">
+</div>
+
+<h1>
+    <br>
+    <br>
+    <br>
+</h1>
+</div>
+</body>
+
+</html>
