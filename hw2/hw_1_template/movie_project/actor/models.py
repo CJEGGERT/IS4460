@@ -6,3 +6,7 @@ class Actor(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     img_url = models.TextField(null=True, blank=True)
+
+    def __str__(self):
+        return self.first_name
+    

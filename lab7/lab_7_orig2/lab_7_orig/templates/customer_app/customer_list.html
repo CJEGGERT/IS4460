@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <a href="{% url 'customer-create' %}">Create Customer</a><br>
+    <a href="{% url 'order-list' %}">List All Orders</a><br><br>
+    Customers:<br>
+    <u>
+        {% for customer in customers%}
+        <li>{{ customer.name }}</li>
+        {% endfor %}
+    </u>
+
+</body>
+
+</html>

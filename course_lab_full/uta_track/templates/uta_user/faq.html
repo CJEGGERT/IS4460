@@ -1,15 +1,22 @@
-<!DOCTYPE html>
+{% extends 'uta_user/base.html' %}
 
-<html>
+{% block content %}
 
-<head>
-    <title>Faq Page</title>
-</head>
+Faq Page
 
-<body>
-    <h1>Here is some information about our site</h1>
-</body>
+<a href="{% url 'home' %}">Click here to go home</a>
+
+{{ hi }}
+
+<p>
+    {{ faq_main }}
+</p>
+
+<ul>
+    {% for something in faq_main.faq_set.all %}
+    <li>{{something}}</li>
+    {% endfor %}
+</ul>
 
 
-
-</html>
+{% endblock %}

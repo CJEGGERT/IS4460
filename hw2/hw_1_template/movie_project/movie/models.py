@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+from actor.models import Actor
 
 from django.db import models
 
@@ -15,6 +16,7 @@ class Movie(models.Model):
     genre = models.CharField(max_length=100, null=True, blank=True)
     youtube_url = models.TextField(null=True, blank=True)
     img_url = models.TextField(null=True, blank=True)
+    actor=models.ManyToManyField(Actor)
 
     def __str__(self):
-        return self.title
+        return self.title    

@@ -141,5 +141,3 @@ for movie_key in movies.keys():
     print(movie_key)
     movie = movies.get(movie_key)
     movie.save()
-
-
